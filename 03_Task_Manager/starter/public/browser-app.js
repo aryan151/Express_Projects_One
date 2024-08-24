@@ -15,7 +15,7 @@ const showTasks = async () => {
       loadingDOM.style.visibility = 'hidden'
       return
     }
-    const allTasks = tasks
+    const allTasks = tasks 
       .map((task) => {
         const { completed, _id: taskID, name } = task
         return `<div class="single-task ${completed && 'task-completed'}">
@@ -25,7 +25,7 @@ const showTasks = async () => {
 
 
 <!-- edit link -->
-<a href="task.html?id=${taskID}"  class="edit-link">
+<a href="task.html?id=${taskID}"  class="edit-link">  
 <i class="fas fa-edit"></i>
 </a>
 <!-- delete btn -->
