@@ -5,8 +5,8 @@ const taskInputDOM = document.querySelector('.task-input')
 const formAlertDOM = document.querySelector('.form-alert')
 // Load tasks from /api/tasks
 const showTasks = async () => {
-  loadingDOM.style.visibility = 'visible'
-  try {
+  loadingDOM.style.visibility = 'visible'  
+  try {    
     const {
       data: { tasks },
     } = await axios.get('/api/v1/tasks')
